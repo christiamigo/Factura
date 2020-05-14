@@ -9,6 +9,10 @@ public class Factura implements FacturaI {
 	}
 
 	public void cambiarEstado(Estados estado);
-	public float getTotal();
-	public  float getCantidadIva();
+	public float getTotal() {
+        	return this.num + this.base;
+        }
+	public  float getCantidadIva() {
+		return this.tipoIva;
+	}
 }
